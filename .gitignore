@@ -63,11 +63,3 @@ UnityCrashHandler/
 # Ignore Rider files if using JetBrains Rider
 .idea/
 *.sln.iml
-
-# Ignore specific files from the screenshot
-Assets/Enemies/Enemies.meta
-Assets/MainCharacter/MainCharacter.meta
-Assets/Scenes/Scenes.meta
-
-# Ignore asset meta files
-*.meta
