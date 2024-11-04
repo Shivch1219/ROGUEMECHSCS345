@@ -1,0 +1,73 @@
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore logs and temporary files
+*.log
+Logs/
+Temp/
+UserSettings/
+
+# Ignore build folders
+Build/
+Builds/
+[Ll]ibrary/
+[Ll]ocalPackages/
+
+# Ignore auto-generated files
+obj/
+*.csproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.unityproj
+
+# Ignore Unity-specific files
+/Library/
+/ProjectSettings/AudioManager.asset
+/ProjectSettings/DynamicsManager.asset
+/ProjectSettings/EditorBuildSettings.asset
+/ProjectSettings/GraphicsSettings.asset
+/ProjectSettings/InputManager.asset
+/ProjectSettings/NavMeshAreas.asset
+/ProjectSettings/NetworkManager.asset
+/ProjectSettings/Physics2DSettings.asset
+/ProjectSettings/ProjectSettings.asset
+/ProjectSettings/TagManager.asset
+
+# Ignore builds and crashes
+CrashReports/
+Builds/
+UnityCrashHandler/
+
+# Ignore personal Unity settings
+.vscode/
+/.idea/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+
+# Ignore VSCode settings if using VSCode
+.vscode/
+
+# Ignore Rider files if using JetBrains Rider
+.idea/
+*.sln.iml
+
+# Ignore specific files from the screenshot
+Assets/Enemies/Enemies.meta
+Assets/MainCharacter/MainCharacter.meta
+Assets/Scenes/Scenes.meta
+
+# Ignore asset meta files
+*.meta
