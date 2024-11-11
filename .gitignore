@@ -7,6 +7,11 @@ Thumbs.db
 Logs/
 Temp/
 UserSettings/
+Library/
+obj/
+Build/
+Builds/
+UserSettings/
 
 # Ignore build folders
 Build/
@@ -63,3 +68,9 @@ UnityCrashHandler/
 # Ignore Rider files if using JetBrains Rider
 .idea/
 *.sln.iml
+
+#ignore meta files
+*.meta
+
+#MacOS specific 
+.DS_Store
