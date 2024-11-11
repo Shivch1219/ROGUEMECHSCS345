@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public float moveSpeed = 5f; // Adjust the movement speed
+    public float moveSpeed = 5f;
     private Rigidbody2D rb;
+    private Vector2 movement;
 
     void Start()
     {
@@ -14,14 +15,15 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        // Get input from arrow keys
-        float moveX = Input.GetAxis("Horizontal");
-        float moveY = Input.GetAxis("Vertical");
+        // Get input from the user
+        movement.x = Input.GetAxis("Horizontal");
+        movement.y = Input.GetAxis("Vertical");
+    }
 
-        // Move player based on input
-        Vector2 movement = new Vector2(moveX, moveY).normalized * moveSpeed;
-        rb.MovePosition(rb.position + movement * Time.deltaTime);
-
-
+    void FixedUpdate()
+    {
+        // Move the player while allowing physics to handle collisions
+        rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
     }
 }
+
