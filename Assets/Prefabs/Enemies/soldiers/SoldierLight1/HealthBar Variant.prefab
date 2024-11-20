@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HealthBar Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 2234411711454665168, guid: 1e8d7b794034a49c28700af7b2438a9f, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5982776892276099871, guid: 1e8d7b794034a49c28700af7b2438a9f, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -74,11 +78,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5982776892276099871, guid: 1e8d7b794034a49c28700af7b2438a9f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -2.97
+      value: -2.9700012
       objectReference: {fileID: 0}
     - target: {fileID: 5982776892276099871, guid: 1e8d7b794034a49c28700af7b2438a9f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -3.4
+      value: -3.399994
       objectReference: {fileID: 0}
     - target: {fileID: 5982776892276099871, guid: 1e8d7b794034a49c28700af7b2438a9f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

@@ -1,18 +1,31 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class Bullet : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public float speed = 10f;
+
+    private Vector2 direction;
+
+    public void SetDirection(Vector2 targetDirection)
     {
-        
+        direction = targetDirection.normalized;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        transform.position += (Vector3)direction * speed * Time.deltaTime;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Enemy"))
+        {
+            collision.GetComponent<Health>()?.TakeDamage(10f);
+            Destroy(gameObject);
+        }
+        else if (collision.CompareTag("Obstacle"))
+        {
+            Destroy(gameObject);
+        }
     }
 }
